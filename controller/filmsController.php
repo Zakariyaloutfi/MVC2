@@ -53,7 +53,7 @@ class FilmsController{
         //$Film = new Film($this->connexion);
         //$listeFilms = $Film->getAll();
         //$this->view("index",array("Films"=>$listeFilms,"titre"=> "PHP MVC"));
-        header('Location: /deuxieme_annee/ferratier/MVC2/welcome.php');
+        header('Location: /MVC2/welcome.php');
     }   
 
     public function read(){
@@ -89,7 +89,7 @@ class FilmsController{
             }
             $Film->insert(); 
         }
-        header('Location: /deuxieme_annee/ferratier/MVC2/index.php?controller=Films&action=getAll');
+        header('Location: /MVC2/index.php?controller=Films&action=getAll');
     }
     
     // Méthode pour supprimer un film à partir de son identifiant
@@ -100,7 +100,7 @@ class FilmsController{
             $Film->delete();
         }
         // Redirection vers la liste des films après la suppression
-        header('Location: /deuxieme_annee/ferratier/MVC2/index.php?controller=Films&action=getAll');
+        header('Location: /MVC2/index.php?controller=Films&action=getAll');
     }
 
     // Méthode pour préparer la vue d'édition d'un film à partir de son identifiant

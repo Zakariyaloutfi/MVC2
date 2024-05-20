@@ -17,7 +17,7 @@ session_destroy();
 // clear cookies
 $util->clearAuthCookie();
 
-header("Location: /deuxieme_annee/ferratier/MVC2/login.php");
+header("Location: /MVC2/login.php");
 
 
 

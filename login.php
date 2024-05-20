@@ -19,7 +19,7 @@ $util = new UtilsController();
 if ($isLoggedIn) {
     //$util->redirect("dashboard.php");
     //echo "isConnected";
-    header('Location: /deuxieme_annee/ferratier/MVC2/welcome.php');
+    header('Location: /MVC2/welcome.php');
 }
 
 if (! empty($_POST["login"])) {
@@ -69,7 +69,7 @@ if (! empty($_POST["login"])) {
         } else {
             $util->clearAuthCookie();
         }
-        header('Location: /deuxieme_annee/ferratier/MVC2/welcome.php'); //$util->redirect("dashboard.php");
+        header('Location: /MVC2/welcome.php'); //$util->redirect("dashboard.php");
     } else {
         $message = "Invalid Login";
     }
@@ -94,14 +94,14 @@ if (! empty($_POST["login"])) {
         }
     </style>
         <!-- Bibliothèque Fontawesome pour les icones  -->
-        <link href="/deuxieme_annee/ferratier/MVC2/assets/image/fontawesome-free-6.4.0-web/css/fontawesome.min.css" rel="stylesheet" />
-    <link href="/deuxieme_annee/ferratier/MVC2/assets/image/fontawesome-free-6.4.0-web/css/brands.min.css" rel="stylesheet"/>
-    <link href="/deuxieme_annee/ferratier/MVC2/assets/image/fontawesome-free-6.4.0-web/css/solid.min.css" rel="stylesheet"/> 
+        <link href="/MVC2/assets/image/fontawesome-free-6.4.0-web/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="/MVC2/assets/image/fontawesome-free-6.4.0-web/css/brands.min.css" rel="stylesheet"/>
+    <link href="/MVC2/assets/image/fontawesome-free-6.4.0-web/css/solid.min.css" rel="stylesheet"/> 
     <!-- Bibliothèque Boostrap pour la mise en page  -->
-    <link rel="stylesheet" href="/deuxieme_annee/ferratier/MVC2/assets/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/MVC2/assets/bootstrap-4.6.2-dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="/deuxieme_annee/ferratier/MVC2/assets/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/MVC2/assets/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
